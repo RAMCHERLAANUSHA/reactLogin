@@ -1,0 +1,25 @@
+.container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+.card{
+    width: 30%;
+    height: 500px !important;
+    background-color: white;
+}
+body{
+    background-color: rgb(2, 2, 60) !important;
+}
+.header{
+    text-align: center;
+    padding-top: 10%;
+}
+.text{
+    color: rgb(2, 2, 60);
+    font-size: 30px;
+    font-weight: 800;
+    border-bottom: 5px solid rgb(2, 2, 60);
+    display: inline-block;
+}

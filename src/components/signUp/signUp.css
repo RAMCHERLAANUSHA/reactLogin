@@ -6,7 +6,7 @@
 }
 .card{
     width: 30%;
-    height: 400px;
+    height: 400px !important;
     background-color: white;
 }
 body{
