@@ -1,0 +1,61 @@
+.container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+.card{
+    width: 30%;
+    height: 400px;
+    background-color: white;
+}
+body{
+    background-color: rgb(2, 2, 60) !important;
+}
+.header{
+    text-align: center;
+    padding-top: 10%;
+}
+
+.text{
+    color: rgb(2, 2, 60);
+    font-size: 30px;
+    font-weight: 800;
+    border-bottom: 5px solid rgb(2, 2, 60);
+    display: inline-block;
+}
+.inputs{
+    padding-top: 50px;
+    text-align: center;
+    justify-content: center;
+}
+.inputt{
+    padding: 15px;
+    padding-top: 0 !important;
+}
+input{
+    height: 25px;
+    width: 200px;
+    background-color: whitesmoke;
+    margin-top: -10px;
+}
+img{
+    padding-right: 10px;
+    /* padding-top:0px; */
+
+}
+.forget-password{
+    text-align: center;
+    padding-top: 10px;
+}
+.submit-container{
+    text-align: center;
+    padding-top: 10px;
+}
+button{
+    background-color: rgb(2, 2, 60);
+    width: 80px;
+    height: 30px;
+    border: none;
+    color: white;
+}
