@@ -4,9 +4,9 @@
     display: flex;
     height: 100vh;
 }
-.card{
+.cards{
     width: 30%;
-    height: 500px !important;
+    height: 200px !important;
     background-color: white;
 }
 body{
@@ -22,4 +22,15 @@ body{
     font-weight: 800;
     border-bottom: 5px solid rgb(2, 2, 60);
     display: inline-block;
+}
+.data{
+    padding-left: 10%;
+}
+.submit-containers{
+    text-align: end;
+    padding-top: 10px;
+}
+.btn{
+    background-color: white;
+    color: rgb(2, 2, 60);
 }

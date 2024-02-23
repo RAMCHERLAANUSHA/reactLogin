@@ -103,15 +103,15 @@ const LoginSignUp = () => {
         <div className='inputs'>
           <div className='inputt'>
             <img src={user_icon} alt=''/>
-            <input id='username' type='text' onBlur={validation_username} />
+            <input id='username' type='text' placeholder='Username' onBlur={validation_username} />
           </div>
           <div className='inputt'>
             <img src={email_icon} alt=''/>
-            <input id='email' type='text' onBlur={validation_email} />
+            <input id='email' type='text' placeholder='Email' onBlur={validation_email} />
           </div>
           <div className='inputt'>
             <img src={password_icon} alt=''/>
-            <input id='password' type='password' onBlur={validation_password} />
+            <input id='password' type='password' placeholder='Password' onBlur={validation_password} />
           </div>
         </div>
         <div className='forget-password'>Already have an Account? <Link to="/login">Login</Link></div>

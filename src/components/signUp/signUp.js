@@ -1,31 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './signUp.css';
 import email_icon from '../assets/email.png';
 import password_icon from '../assets/password.png';
 import { Link } from 'react-router-dom';
 
 const SignUp = () => {
-    const userDataString = localStorage.getItem('userData');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
-    const userData = JSON.parse(userDataString);
+    const handleEmailChange = (e) => {
+        setEmail(e.target.value);
+    };
 
-    const emails = userData?.email;
-    const passwords = userData?.password;
-
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-
+    const handlePasswordChange = (e) => {
+        setPassword(e.target.value);
+    };
 
     const signUpBtn = () => {
-        if (email === emails && password === passwords) {
+        const userDataString = localStorage.getItem('userData');
+        const parsedUserData = JSON.parse(userDataString);
+        
+        if (email === parsedUserData.email && password === parsedUserData.password) {
             alert('Log In Successful!');
             window.location.href = '/details';
-        }
-        else{
-            alert('enter valid Credentials');
-            window.location.href = '/login';
+        } else {
+            alert('Enter valid credentials');
         }
     };
+
     return (
         <div className='container'>
             <div className='card'>
@@ -36,14 +38,24 @@ const SignUp = () => {
                 <div className='inputs'>
                     <div className='inputt'>
                         <img src={email_icon} alt='' />
-                        <input id='email' type='text'/>
+                        <input
+                            type='text'
+                            value={email}
+                            placeholder='Email'
+                            onChange={handleEmailChange}
+                        />
                     </div>
                     <div className='inputt'>
                         <img src={password_icon} alt='' />
-                        <input id='password' type='text' />
+                        <input
+                            type='password'
+                            value={password}
+                            placeholder='Password'
+                            onChange={handlePasswordChange}
+                        />
                     </div>
                 </div>
-                <div className='forget-password'>don't have an Account?<Link to="/signup">SignUp</Link></div>
+                <div className='forget-password'>Don't have an account? <Link to="/signup">SignUp</Link></div>
                 <div className='submit-container'>
                     <button id='signup' onClick={signUpBtn}>Login</button>
                 </div>
