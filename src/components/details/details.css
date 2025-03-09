@@ -4,18 +4,22 @@
     display: flex;
     height: 100vh;
 }
+
 .cards{
     width: 30%;
     height: 200px !important;
     background-color: white;
 }
+
 body{
     background-color: rgb(2, 2, 60) !important;
 }
+
 .header{
     text-align: center;
     padding-top: 10%;
 }
+
 .text{
     color: rgb(2, 2, 60);
     font-size: 30px;
@@ -23,14 +27,51 @@ body{
     border-bottom: 5px solid rgb(2, 2, 60);
     display: inline-block;
 }
+
 .data{
     padding-left: 10%;
 }
+
 .submit-containers{
     text-align: end;
     padding-top: 10px;
 }
+
 .btn{
     background-color: white;
     color: rgb(2, 2, 60);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .cards {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        width: 70%;
+    }
+    .data {
+        padding-left: 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cards {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+    .text {
+        font-size: 24px;
+    }
+    .data h3 {
+        font-size: 16px;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
 }

@@ -4,14 +4,17 @@
     display: flex;
     height: 100vh;
 }
+
 .card{
     width: 30%;
     height: 500px !important;
     background-color: white;
 }
+
 body{
     background-color: rgb(2, 2, 60) !important;
 }
+
 .header{
     text-align: center;
     padding-top: 10%;
@@ -24,38 +27,78 @@ body{
     border-bottom: 5px solid rgb(2, 2, 60);
     display: inline-block;
 }
+
 .inputs{
     padding-top: 50px;
     text-align: center;
     justify-content: center;
 }
+
 .inputt{
     padding: 15px;
     padding-top: 0 !important;
 }
+
 input{
     height: 25px;
     width: 200px;
     background-color: whitesmoke;
     margin-top: -10px;
 }
+
 img{
     padding-right: 10px;
-    /* padding-top:0px; */
-
 }
+
 .forget-password{
     text-align: center;
     padding-top: 10px;
 }
+
 .submit-container{
     text-align: center;
     padding-top: 10px;
 }
+
 button{
     background-color: rgb(2, 2, 60);
     width: 80px;
     height: 30px;
     border: none;
     color: white;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .card {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 70%;
+    }
+    input {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+    .text {
+        font-size: 24px;
+    }
+    input {
+        width: 160px;
+    }
+    button {
+        width: 70px;
+        height: 25px;
+        font-size: 14px;
+    }
 }
